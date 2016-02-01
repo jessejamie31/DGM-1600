@@ -5,11 +5,12 @@ public class Ifstatement : MonoBehaviour
 {
 
 	// Use this for initialization
-	//void Start () {
+	//void Start () 
+
 	
-	float coffeeTemperature = 85.0f; 
-	float hotLimitTemperature = 70.0f;
-	float coldLimitTemperature = 40.0f;
+	float coffeeTemperature = 60.0f; 
+	float hotLimitTemperature = 40.0f;
+	float coldLimitTemperature = 30.0f;
 	
 	
 	
@@ -19,7 +20,7 @@ public class Ifstatement : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space))
 			TemperatureTest();
 		
-		coffeeTemperature -= Time.deltaTime * 5f;
+		coffeeTemperature -= Time.deltaTime * 3f;
 	}
 	
 	void TemperatureTest ()
