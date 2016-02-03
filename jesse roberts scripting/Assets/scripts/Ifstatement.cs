@@ -8,7 +8,7 @@ public class Ifstatement : MonoBehaviour
 	//void Start () 
 
 	
-	float coffeeTemperature = 60.0f; 
+	float hotcocoTemperature = 60.0f; 
 	float hotLimitTemperature = 40.0f;
 	float coldLimitTemperature = 30.0f;
 	
@@ -20,28 +20,28 @@ public class Ifstatement : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space))
 			TemperatureTest();
 		
-		coffeeTemperature -= Time.deltaTime * 3f;
+		hotcocoTemperature -= Time.deltaTime * 3f;
 	}
 	
 	void TemperatureTest ()
 	{
-		// If the coffee's temperature is greater than the hottest drinking temperature...
-		if(coffeeTemperature > hotLimitTemperature)
+		// If the hotcoco's temperature is greater than the hottest drinking temperature...
+		if(hotcocoTemperature > hotLimitTemperature)
 		{
 			// ... do this.
-			print("Coffee is too hot.");
+			print("hotcoco is too hot.");
 		}
-		// If it isn't, but the coffee temperature is less than the coldest drinking temperature...
-		else if(coffeeTemperature < coldLimitTemperature)
+		// If it isn't, but the hotcoco's temperature is less than the coldest drinking temperature...
+		else if(hotcocoTemperature < coldLimitTemperature)
 		{
 			// ... do this.
-			print("Coffee is too cold.");
+			print("hotcoco is too cold.");
 		}
 		// If it is neither of those then...
 		else
 		{
 			// ... do this.
-			print("Coffee is just right.");
+			print("hotcoco is just right.");
 		}
 		
 	}
