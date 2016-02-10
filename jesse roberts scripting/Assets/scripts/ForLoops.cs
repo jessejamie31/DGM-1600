@@ -3,19 +3,16 @@ using System.Collections;
 
 public class ForLoops : MonoBehaviour 
 {
-	int civiliansToSave = 3;
+	int numBadguys = 4;
 
-	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
-		while(civiliansToSave > 0)
+		for(int i = 0; i < numBadguys; i++)
 		{
-			Debug.Log ("You've saved a civilian!");
-			civiliansToSave--;
-	}
-	
+			Debug.Log("Creating Badguy number: " + i);
+		}
 	// Update is called once per frame
-	//void Update () {
-	
+	//void Update () 
 	}
+
 }
